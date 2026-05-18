@@ -2570,4 +2570,8 @@ body {
     grid-template-columns: 1fr;
     padding: 48px 22px 32px;
   }
+  
+  body {
+  outline: 10px solid red !important;
+}
 }
