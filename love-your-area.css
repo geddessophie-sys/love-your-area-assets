@@ -2109,7 +2109,7 @@ body {
 @media (max-width: 1280px) {
   :root {
     --gutter: clamp(32px, 4vw, 64px);
-    --section-y: clamp(84px, 7vw, 108px);
+    --section-y: clamp(88px, 7vw, 112px);
   }
 
   .hero {
@@ -2185,7 +2185,7 @@ body {
 
 @media (max-width: 900px) {
   :root {
-    --section-y: 80px;
+    --section-y: 88px;
   }
 
   .nav {
@@ -2418,7 +2418,7 @@ body {
 
 @media (max-width: 640px) {
   :root {
-    --section-y: 72px;
+    --section-y: 76px;
   }
 
   .nav-links {
