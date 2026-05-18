@@ -352,9 +352,9 @@ body {
 /* Hero */
 .hero {
   --hero-frame-inset: clamp(28px, 3.5vw, 48px);
-  min-height: clamp(760px, 100vh, 980px);
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
   background: var(--bg);
 }
 
