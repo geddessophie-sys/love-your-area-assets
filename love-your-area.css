@@ -2682,6 +2682,9 @@ body {
   color: #2F2F2F;
   text-decoration: none;
 }
+  .hero-signature {
+  color: red !important;
+}
 
 /* Make Webflow-generated nav link wrappers behave cleanly */
 .nav-links a {
@@ -2694,15 +2697,13 @@ body {
 .section-dark .display-xl {
   color: #FAF7F2;
 }
-
 /* Make embedded image frames consistent */
+./* Make embedded image frames consistent */
 .area-image-frame {
   position: absolute;
   inset: 28px;
   border: 1px solid rgba(214, 195, 163, 0.22);
   pointer-events: none;
   z-index: 2;
-}
   
- 
 }
