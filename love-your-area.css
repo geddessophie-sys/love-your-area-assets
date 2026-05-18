@@ -2570,8 +2570,139 @@ body {
     grid-template-columns: 1fr;
     padding: 48px 22px 32px;
   }
-  
-  body {
-  outline: 10px solid red !important;
+  /* ============================================================
+   WEBFLOW COMPATIBILITY LAYER
+   Matches actual Webflow class names currently on the page
+   ============================================================ */
+
+/* Section naming */
+.section-quiet {
+  background: var(--bg-quiet) !important;
 }
+
+.section-dark {
+  background: linear-gradient(180deg, #111111 0%, #15110D 100%) !important;
+  color: rgba(245, 243, 239, 0.7) !important;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Running head labels */
+.running-head .rh-label {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #8F7656;
+  font-weight: 500;
+}
+
+.running-head-light .roman,
+.running-head-light .rh-label {
+  color: var(--gold) !important;
+}
+
+.running-head-light .rule {
+  background: rgba(214, 195, 163, 0.22) !important;
+}
+
+/* Red italic emphasis used in Webflow */
+.em,
+.text-span-3,
+.text-span-5,
+.text-span-6,
+.text-span-11 {
+  font-style: italic;
+}
+
+.em,
+.red-em,
+.text-span-5,
+.text-span-6 {
+  color: var(--red) !important;
+}
+
+.display-light .em,
+.display-light .red-em {
+  color: var(--gold) !important;
+}
+
+/* Hero frame/caption class variants created in Webflow */
+.hero-img-frame-1 {
+  position: absolute;
+  inset: var(--hero-frame-inset);
+  border: 1px solid rgba(214, 195, 163, 0.22);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.hero-img-frame-1::before,
+.hero-img-frame-1::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-color: rgba(214, 195, 163, 0.55);
+  border-style: solid;
+}
+
+.hero-img-frame-1::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1px 0 0 1px;
+}
+
+.hero-img-frame-1::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 1px 1px 0;
+}
+
+.hero-cap-1 {
+  position: absolute;
+  left: clamp(28px, 4vw, 56px);
+  bottom: var(--hero-frame-inset);
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  z-index: 4;
+}
+
+/* Nav class variants */
+.lya-nav-brand-sub {
+  font-size: 9px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.nav-link {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #2F2F2F;
+  text-decoration: none;
+}
+
+/* Make Webflow-generated nav link wrappers behave cleanly */
+.nav-links a {
+  text-decoration: none;
+}
+
+/* Current HTML uses section-dark, not section--dark */
+.section-dark .display-lg,
+.section-dark .display-md,
+.section-dark .display-xl {
+  color: #FAF7F2;
+}
+
+/* Make embedded image frames consistent */
+.area-image-frame {
+  position: absolute;
+  inset: 28px;
+  border: 1px solid rgba(214, 195, 163, 0.22);
+  pointer-events: none;
+  z-index: 2;
+}
+  
+ 
 }
